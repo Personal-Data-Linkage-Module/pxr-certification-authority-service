@@ -1,0 +1,44 @@
+{
+    "sessionUrl": "http://localhost:3000/operator/session",
+    "opensslPath": "openssl.exe",
+    "root": {
+        "privateKeyPath": "./temp/root/private.key",
+        "certPath": "./temp/root/cert.pem",
+        "periodDay": 36500,
+        "subject": {
+            "C": "JP",
+            "ST": "Tokyo",
+            "L": "Minato-ku",
+            "O": "aaa Corporation",
+            "OU": "PXR",
+            "CN": "*"
+        }
+    },
+    "server": {
+        "privateKeyPath": "./temp/server/private.key",
+        "certPath": "./temp/server/cert.pem",
+        "periodDay": 36500,
+        "subject": {
+            "C": "JP",
+            "ST": "Tokyo",
+            "L": "Minato-ku",
+            "O": "test-org",
+            "OU": 10001,
+            "CN": "*.---.co.jp"
+        }
+    },
+    "client": {
+        "privateKeyPath": "./temp/client/private.key",
+        "certPath": "./temp/client/cert.pem",
+        "periodDay": 36500,
+        "subject": {
+            "C": "JP",
+            "ST": "Tokyo",
+            "L": "Minato-ku",
+            "O": "test-org",
+            "OU": 10001,
+            "CN": "*.---.co.jp"
+        }
+    },
+    "timezone": "Asia/Tokyo"
+}
