@@ -66,4 +66,5 @@ RUN { crontab -l; echo "*/5 * * * * bash /usr/src/app/create-certificate-chain.b
 
 # Start a container with this line.
 RUN chmod +x /usr/src/app/starting.sh
+RUN chmod +x /usr/src/app/create-certificate-chain.bash
 CMD [ "/usr/src/app/starting.sh" ]
