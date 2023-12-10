@@ -109,7 +109,7 @@ export default class ClientService {
             // エラーを返す
             throw new AppError(Message.FAILED_OPENSSL_CONVERT, ResponseCode.SERVICE_UNAVAILABLE);
         }
-        var validPeriodList = result.split(/\r\n|\r|\n/);
+        const validPeriodList = result.split(/\r\n|\r|\n/);
         const validPeriodStart: string = certificate.getConvertCertificate(validPeriodList[0]);
         const validPeriodEnd: string = certificate.getConvertCertificate(validPeriodList[1]);
 
