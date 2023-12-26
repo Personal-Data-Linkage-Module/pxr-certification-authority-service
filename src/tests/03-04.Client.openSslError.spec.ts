@@ -8,8 +8,8 @@ import { connectDatabase } from '../common/Connection';
 import Common, { Url } from './Common';
 import { Session } from './Session';
 import Config from '../common/Config';
-const Message = Config.ReadConfig('./config/message.json');
 import urljoin = require('url-join');
+const Message = Config.ReadConfig('./config/message.json');
 
 // テストモジュールをインポート
 jest.mock('../common/CertificateControl');

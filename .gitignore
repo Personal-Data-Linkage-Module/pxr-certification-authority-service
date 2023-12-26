@@ -9,5 +9,3 @@ coverage-unit/*
 *.code-workspace
 ca
 ssl
-temp
-temp/**/*

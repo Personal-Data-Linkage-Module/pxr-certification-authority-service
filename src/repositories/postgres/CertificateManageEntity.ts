@@ -19,85 +19,85 @@ export default class CertificateManageEntity {
      * 証明書タイプ
      */
     @Column({ type: 'varchar', length: 255, nullable: false, name: 'cert_type' })
-    certType: string = null;
+        certType: string = null;
 
     /**
      * サブジェクト
      */
     @Column({ type: 'text', nullable: false, name: 'subject' })
-    subject: string = null;
+        subject: string = null;
 
     /**
      * シリアル番号
      */
     @Column({ type: 'varchar', length: 255, nullable: false, name: 'serial_no' })
-    serialNo: string = '';
+        serialNo: string = '';
 
     /**
      * フィンガープリント
      */
     @Column({ type: 'varchar', length: 255, nullable: false, name: 'finger_print' })
-    fingerPrint: string = '';
+        fingerPrint: string = '';
 
     /**
      * 有効期間開始
      */
     @Column({ type: 'timestamp without time zone', nullable: false, name: 'valid_period_start' })
-    validPeriodStart: Date = new Date();
+        validPeriodStart: Date = new Date();
 
     /**
      * 有効期間終了
      */
     @Column({ type: 'timestamp without time zone', nullable: false, name: 'valid_period_end' })
-    validPeriodEnd: Date = new Date();
+        validPeriodEnd: Date = new Date();
 
     /**
      * 証明書(PEM)
      */
     @Column({ type: 'text', nullable: false, name: 'certificate' })
-    certificate: string = null;
+        certificate: string = null;
 
     /**
      * アクターカタログコード
      */
     @Column({ type: 'bigint', name: 'actor_code' })
-    actorCode: number = null;
+        actorCode: number = null;
 
     /**
      * アクターカタログバージョン
      */
     @Column({ type: 'bigint', name: 'actor_version' })
-    actorVersion: number = null;
+        actorVersion: number = null;
 
     /**
      * ブロックコード
      */
     @Column({ type: 'bigint', nullable: false, name: 'block_code' })
-    blockCode: number = null;
+        blockCode: number = null;
 
     /**
      * ブロックバージョン
      */
     @Column({ type: 'bigint', nullable: false, name: 'block_version' })
-    blockVersion: number = null;
+        blockVersion: number = null;
 
     /**
      * 配布フラグ
      */
     @Column({ type: 'boolean', nullable: false, default: false, name: 'is_distributed' })
-    isDistributed: boolean = false;
+        isDistributed: boolean = false;
 
     /**
      * 削除フラグ
      */
     @Column({ type: 'boolean', nullable: false, default: false, name: 'is_disabled' })
-    isDisabled: boolean = false;
+        isDisabled: boolean = false;
 
     /**
      * 登録者
      */
     @Column({ type: 'varchar', length: 255, nullable: false, name: 'created_by' })
-    createdBy: string = '';
+        createdBy: string = '';
 
     /**
      * 登録日時
@@ -109,7 +109,7 @@ export default class CertificateManageEntity {
      * 更新者
      */
     @Column({ type: 'varchar', length: 255, nullable: false, name: 'updated_by' })
-    updatedBy: string = '';
+        updatedBy: string = '';
 
     /**
      * 更新日時

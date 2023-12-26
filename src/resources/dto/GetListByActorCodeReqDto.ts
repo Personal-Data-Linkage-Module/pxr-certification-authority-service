@@ -15,8 +15,8 @@ import { transformToNumber } from '../../common/Transform';
  * 証明書一覧取得(GET)リクエストモデル
  */
 export default class GetListByActorCodeReqDto {
-    @Transform(transformToNumber)
+    @Transform(({ value }) => { return transformToNumber(value); })
     @IsNumber()
     @IsDefined()
-    actorCode: number;
+        actorCode: number;
 }
